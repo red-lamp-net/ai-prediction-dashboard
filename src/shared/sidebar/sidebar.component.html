@@ -1,0 +1,12 @@
+<div class="sidebar d-flex flex-column p-3 bg-dark"
+>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    @for (route of routes(); track route) {
+      <a [routerLink]="route.url" class="nav-link text-white" [class.active]="currentRoute === route.url">
+        <i [class]="route.icon"></i>
+        <span *ngIf="!isCollapsed">{{ route.name }}</span>
+      </a>
+    }
+  </ul>
+</div>

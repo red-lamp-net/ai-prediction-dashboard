@@ -1,0 +1,38 @@
+/* src/app/shared/sidebar/sidebar.component.css */
+.sidebar {
+  transition: width 0.3s;
+  height: 100vh;
+  background-color: #2b2f3a;
+}
+
+.sidebar.collapsed {
+  width: 60px !important;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-link i {
+  font-size: 1.25rem;
+}
+
+.nav-link span {
+  margin-left: 10px;
+}
+
+.btn-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-toggle:hover {
+  background-color: #3b3f4c;
+  border-radius: 5px;
+}

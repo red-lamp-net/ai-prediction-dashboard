@@ -1,0 +1,6 @@
+<p>fixtures works!</p>
+@if(fixtures$ | async; as fixtures){
+  @for (fixture of fixtures; track fixture.id){
+    <p>{{fixture.id}}</p>
+  }
+}
